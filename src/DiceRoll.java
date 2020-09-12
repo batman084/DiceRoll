@@ -34,4 +34,6 @@ public class DiceRoll {
         int int_random = rand.nextInt(upperBound);
         System.out.println("You rolled a " + diceFace[int_random]);
     }
+
+    //test
 }
