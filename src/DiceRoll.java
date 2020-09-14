@@ -31,6 +31,41 @@ public class DiceRoll {
         int[] diceFace = {1, 2, 3, 4, 5, 6};
         int upperBound = 5;
         int int_random = rand.nextInt(upperBound);
+        rollAnimation();
         System.out.println("You rolled a " + diceFace[int_random]);
     }
+
+    static void rollAnimation() {
+        System.out.println("                                                                                     *%&&&%(.                                                    ");
+        System.out.println();
+        System.out.println("                                                                                   %#            .(&%%*                                               ");
+        System.out.println();
+        System.out.println("                                                                               /&    .&&&&&%             *&&&#.                                      ");
+        System.out.println();
+        System.out.println("                                                                              &        .#/                       &&.                                  ");
+        System.out.println();
+        System.out.println("                                                                           &,                      #&&&&&%     &#  .&                                 ");
+        System.out.println();
+        System.out.println("                                                                        ##                                  %%       &.                               ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
 }
