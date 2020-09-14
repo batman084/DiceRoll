@@ -28,7 +28,6 @@ public class DiceRoll {
     }
     static void rollDice() {
         Random rand = new Random(); //Instance of new random class
-        System.out.println("Temp"); //temp content for function
         int[] diceFace = {1, 2, 3, 4, 5, 6};
         int upperBound = 5;
         int int_random = rand.nextInt(upperBound);
