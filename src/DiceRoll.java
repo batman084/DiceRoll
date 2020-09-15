@@ -31,30 +31,27 @@ public class DiceRoll {
         int[] diceFace = {1, 2, 3, 4, 5, 6};
         int upperBound = 5;
         int int_random = rand.nextInt(upperBound);
+
+        rollAnimation();
+
         switch (int_random) {
             case 0:
                 System.out.println();
-                rollAnimation();
                 break;
             case 1:
                 System.out.println();
-                rollAnimation();
                 break;
             case 2:
                 System.out.println();
-                rollAnimation();
                 break;
             case 3:
                 System.out.println();
-                rollAnimation();
                 break;
             case 4:
                 System.out.println();
-                rollAnimation();
                 break;
             case 5:
                 System.out.println();
-                rollAnimation();
                 break;
         }
 
