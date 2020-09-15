@@ -59,6 +59,7 @@ public class DiceRoll {
         }
 
         System.out.println("You rolled a " + diceFace[int_random]);
+
     }
     static void rollAnimation() {
         Random rand = new Random();
@@ -72,11 +73,7 @@ public class DiceRoll {
                     if (lastface == 1) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("|        |");
-                    System.out.println("|    0   |");
-                    System.out.println("|        |");
-                    System.out.println("----------");
+                    printface1();
                     x++;
                     lastface = 1;
                     break;
@@ -84,11 +81,7 @@ public class DiceRoll {
                     if (lastface == 2) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("|  0     |");
-                    System.out.println("|        |");
-                    System.out.println("|      0 |");
-                    System.out.println("----------");
+                    printface2();
                     x++;
                     lastface = 2;
                     break;
@@ -97,11 +90,7 @@ public class DiceRoll {
                     if (lastface == 3) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("|0       |");
-                    System.out.println("|   0    |");
-                    System.out.println("|       0|");
-                    System.out.println("----------");
+                    printface3();
                     x++;
                     lastface = 3;
                     break;
@@ -110,11 +99,7 @@ public class DiceRoll {
                     if (lastface == 4) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("| 0    0 |");
-                    System.out.println("|        |");
-                    System.out.println("| 0    0 |");
-                    System.out.println("----------");
+                    printface4();
                     x++;
                     lastface = 4;
                     break;
@@ -122,11 +107,7 @@ public class DiceRoll {
                     if (lastface == 5) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("| 0    0 |");
-                    System.out.println("|   0    |");
-                    System.out.println("| 0    0 |");
-                    System.out.println("----------");
+                    printface5();
                     x++;
                     lastface = 5;
                     break;
@@ -134,11 +115,7 @@ public class DiceRoll {
                     if (lastface == 6) {
                         break;
                     }
-                    System.out.println("----------");
-                    System.out.println("| 0    0 |");
-                    System.out.println("| 0    0 |");
-                    System.out.println("| 0    0 |");
-                    System.out.println("----------");
+                    printface6();
                     x++;
                     lastface = 6;
                     break;
@@ -167,6 +144,47 @@ public class DiceRoll {
 
 
 
-
+    }
+    static void printface1() {
+        System.out.println("----------");
+        System.out.println("|        |");
+        System.out.println("|    0   |");
+        System.out.println("|        |");
+        System.out.println("----------");
+    }
+    static void printface2() {
+        System.out.println("----------");
+        System.out.println("|  0     |");
+        System.out.println("|        |");
+        System.out.println("|      0 |");
+        System.out.println("----------");
+    }
+    static void printface3() {
+        System.out.println("----------");
+        System.out.println("|0       |");
+        System.out.println("|   0    |");
+        System.out.println("|       0|");
+        System.out.println("----------");
+    }
+    static void printface4() {
+        System.out.println("----------");
+        System.out.println("| 0    0 |");
+        System.out.println("|        |");
+        System.out.println("| 0    0 |");
+        System.out.println("----------");
+    }
+    static void printface5() {
+        System.out.println("----------");
+        System.out.println("| 0    0 |");
+        System.out.println("|   0    |");
+        System.out.println("| 0    0 |");
+        System.out.println("----------");
+    }
+    static void printface6() {
+        System.out.println("----------");
+        System.out.println("| 0    0 |");
+        System.out.println("| 0    0 |");
+        System.out.println("| 0    0 |");
+        System.out.println("----------");
     }
 }
