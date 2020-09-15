@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -26,7 +27,7 @@ public class DiceRoll {
         System.out.println("Thanks for using the Dice Roller!");
 
     }
-    static void rollDice() {
+    public static void rollDice() {
         Random rand = new Random(); //Instance of new random class
         int[] diceFace = {1, 2, 3, 4, 5, 6};
         int upperBound = 5;
@@ -86,5 +87,10 @@ public class DiceRoll {
 
 
 
+    }
+
+    static void ticTacToe() {
+        int[][] board = new int[3][3];
+        System.out.println("This is the board: " + Arrays.toString(board));
     }
 }
