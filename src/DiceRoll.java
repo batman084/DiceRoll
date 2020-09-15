@@ -51,6 +51,40 @@ public class DiceRoll {
                 System.out.println();
                 break;
         }
+        rollAnimation();
         System.out.println("You rolled a " + diceFace[int_random]);
+    }
+    static void rollAnimation() {
+        //make dice faces only and cycle through them
+        System.out.println("                                                                                     *%&&&%(.                                                    ");
+        System.out.println();
+        System.out.println("                                                                                   %#            .(&%%*                                               ");
+        System.out.println();
+        System.out.println("                                                                               /&    .&&&&&%             *&&&#.                                      ");
+        System.out.println();
+        System.out.println("                                                                              &        .#/                       &&.                                  ");
+        System.out.println();
+        System.out.println("                                                                           &,                      #&&&&&%     &#  .&                                 ");
+        System.out.println();
+        System.out.println("                                                                        ##                                  %%       &.                               ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
