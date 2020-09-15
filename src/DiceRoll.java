@@ -36,22 +36,22 @@ public class DiceRoll {
 
         switch (int_random) {
             case 0:
-                System.out.println();
+                printface1();
                 break;
             case 1:
-                System.out.println();
+                printface2();
                 break;
             case 2:
-                System.out.println();
+                printface3();
                 break;
             case 3:
-                System.out.println();
+                printface4();
                 break;
             case 4:
-                System.out.println();
+                printface5();
                 break;
             case 5:
-                System.out.println();
+                printface6();
                 break;
         }
 
