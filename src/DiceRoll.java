@@ -123,26 +123,6 @@ public class DiceRoll {
 
         }
         //make dice faces only and cycle through them
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
     static void printface1() {
         System.out.println("----------");
