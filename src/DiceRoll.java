@@ -28,10 +28,63 @@ public class DiceRoll {
     }
     static void rollDice() {
         Random rand = new Random(); //Instance of new random class
-        System.out.println("Temp"); //temp content for function
         int[] diceFace = {1, 2, 3, 4, 5, 6};
         int upperBound = 5;
         int int_random = rand.nextInt(upperBound);
+        switch (int_random) {
+            case 0:
+                System.out.println();
+                break;
+            case 1:
+                System.out.println();
+                break;
+            case 2:
+                System.out.println();
+                break;
+            case 3:
+                System.out.println();
+                break;
+            case 4:
+                System.out.println();
+                break;
+            case 5:
+                System.out.println();
+                break;
+        }
+        rollAnimation();
         System.out.println("You rolled a " + diceFace[int_random]);
+    }
+    static void rollAnimation() {
+        //make dice faces only and cycle through them
+        System.out.println("                                                                                     *%&&&%(.                                                    ");
+        System.out.println();
+        System.out.println("                                                                                   %#            .(&%%*                                               ");
+        System.out.println();
+        System.out.println("                                                                               /&    .&&&&&%             *&&&#.                                      ");
+        System.out.println();
+        System.out.println("                                                                              &        .#/                       &&.                                  ");
+        System.out.println();
+        System.out.println("                                                                           &,                      #&&&&&%     &#  .&                                 ");
+        System.out.println();
+        System.out.println("                                                                        ##                                  %%       &.                               ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
