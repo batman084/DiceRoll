@@ -165,8 +165,4 @@ public class DiceRoll {
         System.out.println("| 0    0 |");
         System.out.println("----------");
     }
-    public static void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-    }
 }
