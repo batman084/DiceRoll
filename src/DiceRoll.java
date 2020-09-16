@@ -10,6 +10,7 @@ public class DiceRoll {
             String input= sc.nextLine();
             LOOP: //label
             if (input.equals("y")) {
+
                 System.out.println("Proceeding with roll");
                 rollDice();
             }
@@ -27,9 +28,10 @@ public class DiceRoll {
 
     }
     static void rollDice() {
+
         Random rand = new Random(); //Instance of new random class
         int[] diceFace = {1, 2, 3, 4, 5, 6};
-        int upperBound = 5;
+        int upperBound = 6;
         int int_random = rand.nextInt(upperBound);
 
         rollAnimation();
@@ -57,11 +59,12 @@ public class DiceRoll {
         System.out.println("You rolled a " + diceFace[int_random]);
     }
     static void rollAnimation() {
+        clearScreen();
         Random rand = new Random();
         int lastface = 100;
         for (int x =0; x<5;) {
             int[] diceface = {1, 2, 3, 4, 5, 6};
-            int upperBound = 5;
+            int upperBound = 6;
             int int_rando = rand.nextInt(upperBound);
             switch (int_rando) {
                 case 0:
@@ -161,5 +164,9 @@ public class DiceRoll {
         System.out.println("| 0    0 |");
         System.out.println("| 0    0 |");
         System.out.println("----------");
+    }
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 }
