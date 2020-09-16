@@ -4,7 +4,7 @@ public class CoinFlip {
     static void coinFlip() {
         Random rand1 = new Random();
         int[] coinFace = {1,2};
-        int upperBound = 1;
+        int upperBound = 2;
         int int_random = rand1.nextInt(upperBound);
         flipAnimation();
         switch (int_random) {
