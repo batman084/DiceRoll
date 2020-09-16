@@ -12,7 +12,6 @@ public class DiceRoll {
             if (input.equals("y")) {
                 System.out.println("Proceeding with roll");
                 rollDice();
-                CoinFlip.coinFlip();
             }
             else if (input.equals("n")) {
                 System.out.println("Skipping dice roll");
