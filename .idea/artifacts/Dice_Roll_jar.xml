@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Dice Roll:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dice_Roll_jar</output-path>
+    <root id="archive" name="Dice Roll.jar">
+      <element id="module-output" name="Dice Roll" />
+    </root>
+  </artifact>
+</component>
