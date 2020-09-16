@@ -59,7 +59,6 @@ public class DiceRoll {
         System.out.println("You rolled a " + diceFace[int_random]);
     }
     static void rollAnimation() {
-        clearScreen();
         Random rand = new Random();
         int lastface = 100;
         for (int x =0; x<5;) {
