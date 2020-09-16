@@ -58,11 +58,11 @@ public class DiceRoll {
     }
     static void rollAnimation() {
         Random rand = new Random();
-        int[] diceface = {1, 2, 3, 4, 5, 6};
-        int upperBound = 5;
-        int int_rando = rand.nextInt(upperBound);
         int lastface = 100;
         for (int x =0; x<5;) {
+            int[] diceface = {1, 2, 3, 4, 5, 6};
+            int upperBound = 5;
+            int int_rando = rand.nextInt(upperBound);
             switch (int_rando) {
                 case 0:
                     if (lastface == 1) {
