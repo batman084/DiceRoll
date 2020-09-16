@@ -11,7 +11,7 @@ public class RockPaperScissors {
         System.out.println("You chose " + userInput + ".");
 
         Random computerValue = new Random();
-        computerValue.
+
 
         switch (userInput) {
             case "Rock":
