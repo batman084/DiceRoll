@@ -56,6 +56,24 @@ public class DiceRoll {
         }
 
         System.out.println("You rolled a " + diceFace[int_random]);
+        if (int_random == 1) {
+            printface1();
+        }
+        if (int_random == 2) {
+            printface2();
+        }
+        if (int_random == 3) {
+            printface3();
+        }
+        if (int_random == 4) {
+            printface4();
+        }
+        if (int_random == 5) {
+            printface5();
+        }
+        if (int_random == 6) {
+            printface6();
+        }
 
     }
     static void rollAnimation() {
@@ -65,7 +83,7 @@ public class DiceRoll {
             int upperBound = 5;
             int int_rando = rand.nextInt(upperBound);
             int lastface = 100;
-            switch(int_rando) {
+            switch (int_rando) {
                 case 0:
                     if (lastface == 1) {
                         break;
@@ -120,26 +138,6 @@ public class DiceRoll {
             }
 
         }
-        //make dice faces only and cycle through them
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
     static void printface1() {
