@@ -59,7 +59,6 @@ public class DiceRoll {
         Random rand = new Random();
         int lastface = 100;
         for (int x =0; x<5;) {
-            int[] diceface = {1, 2, 3, 4, 5, 6};
             int upperBound = 6;
             int int_rando = rand.nextInt(upperBound);
             switch (int_rando) {
