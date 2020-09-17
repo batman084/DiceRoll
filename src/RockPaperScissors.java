@@ -15,11 +15,67 @@ public class RockPaperScissors {
 
         switch (userInput) {
             case "Rock":
+                rock();
                 System.out.println("You chose Rock");
+                break;
+            case "rock":
+                rock();
+                System.out.println("You chose Rock");
+                break;
+            case "r":
+                rock();
+                System.out.println("You chose Rock");
+                break;
             case "Paper":
+                paper();
                 System.out.println("You chose Paper");
+                break;
+            case "p":
+                paper();
+                System.out.println("You chose Paper");
+                break;
+            case "paper":
+                paper();
+                System.out.println("You chose Paper");
+                break;
             case "Scissors":
+                scissors();
                 System.out.println("You chose Scissors");
+                break;
+            case "s":
+                scissors();
+                System.out.println("You chose Scissors");
+                break;
+            case "scissors":
+                scissors();
+                System.out.println("You chose Scissors");
+                break;
         }
+    }
+    static void rock() {
+
+        System.out.println("---'   ____)\n" +
+                "      (_____)\n" +
+                "      (_____)\n" +
+                "      (____)\n" +
+                "---.__(___)\n");
+    }
+    static void paper() {
+
+        System.out.println("    _______\n" +
+                "---'   ____)____\n" +
+                "          ______)\n" +
+                "          _______)\n" +
+                "         _______)\n" +
+                "---.__________)\n");
+    }
+    static void scissors() {
+
+        System.out.println("    _______\n" +
+                "---'   ____)____\n" +
+                "          ______)\n" +
+                "       __________)\n" +
+                "      (____)\n" +
+                "---.__(___)");
     }
 }
