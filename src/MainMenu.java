@@ -35,7 +35,6 @@ public class MainMenu {
                 System.out.println("Thank you for playing!");
                 finalBreak = false;
             }
-
         }
         System.out.println("Thank you for playing. You are exiting.");
         }
