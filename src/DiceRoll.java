@@ -2,29 +2,8 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class DiceRoll {
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in); //start input stream
-        boolean loopBreak = true;
-        while (loopBreak) {
-            System.out.println("Would you like to roll a dice? [y/n]: ");
-            String input= sc.nextLine();
-            if (input.equals("y")) {
-                System.out.println("Proceeding with roll");
-                rollDice();
-            }
-            else if (input.equals("n")) {
-                System.out.println("Skipping dice roll");
-                loopBreak = false;
-            }
-            else {
-                System.out.println("Your input is not accepted. Please try again");
-            }
-        }
-        System.out.println();
-        System.out.println("Thanks for using the Dice Roller!");
 
-    }
-    static void rollDice() {
+    public static void rollDice() {
 
         Random rand = new Random(); //Instance of new random class
         int[] diceFace = {1, 2, 3, 4, 5, 6};
@@ -55,7 +34,7 @@ public class DiceRoll {
         }
         System.out.println("You rolled a " + diceFace[int_random]);
     }
-    static void rollAnimation() {
+    public static void rollAnimation() {
         Random rand = new Random();
         int lastface = 100;
         for (int x =0; x<5;) {
@@ -118,42 +97,42 @@ public class DiceRoll {
         }
 
     }
-    static void printface1() {
+    public static void printface1() {
         System.out.println("----------");
         System.out.println("|        |");
         System.out.println("|    0   |");
         System.out.println("|        |");
         System.out.println("----------");
     }
-    static void printface2() {
+    public static void printface2() {
         System.out.println("----------");
         System.out.println("|  0     |");
         System.out.println("|        |");
         System.out.println("|      0 |");
         System.out.println("----------");
     }
-    static void printface3() {
+    public static void printface3() {
         System.out.println("----------");
         System.out.println("|0       |");
         System.out.println("|   0    |");
         System.out.println("|       0|");
         System.out.println("----------");
     }
-    static void printface4() {
+    public static void printface4() {
         System.out.println("----------");
         System.out.println("| 0    0 |");
         System.out.println("|        |");
         System.out.println("| 0    0 |");
         System.out.println("----------");
     }
-    static void printface5() {
+    public static void printface5() {
         System.out.println("----------");
         System.out.println("| 0    0 |");
         System.out.println("|   0    |");
         System.out.println("| 0    0 |");
         System.out.println("----------");
     }
-    static void printface6() {
+    public static void printface6() {
         System.out.println("----------");
         System.out.println("| 0    0 |");
         System.out.println("| 0    0 |");

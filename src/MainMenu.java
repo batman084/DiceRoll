@@ -9,7 +9,7 @@ public class MainMenu {
             String input= sc.nextLine();
             if (input.equals("y")) {
                 System.out.println("Proceeding with roll");
-                rollDice();
+                DiceRoll.rollDice();
             }
             else if (input.equals("n")) {
                 System.out.println("Skipping dice roll");
