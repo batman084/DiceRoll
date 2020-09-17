@@ -35,32 +35,13 @@ public class MainMenu {
                 System.out.println("Thank you for playing!");
                 finalBreak = false;
             }
-
         }
         System.out.println("Thank you for playing. You are exiting.");
         }
 
     //dice roll
     public static void runDiceRoll() {
-        Scanner scan= new Scanner(System.in); //start input stream
-        boolean loopBreak = true;
-        while (loopBreak) {
-            System.out.println("Would you like to roll a dice? [y/n]: ");
-            String input= scan.nextLine();
-            if (input.equals("y")) {
-                System.out.println("Proceeding with roll");
-                DiceRoll.rollDice();
-            }
-            else if (input.equals("n")) {
-                System.out.println("Skipping dice roll");
-                loopBreak = false;
-            }
-            else {
-                System.out.println("Your input is not accepted. Please try again");
-            }
-        }
-        System.out.println();
-        System.out.println("Thanks for using the Dice Roller!");
+        DiceRoll.rollDice();
     }
     //coin flip
     public static void runCoinFlip() {
@@ -68,7 +49,7 @@ public class MainMenu {
     }
     //rock paper scissors
     public static void runRPS() {
-
+        RockPaperScissors.throwRockPaperScissors();
     }
 
 
