@@ -6,7 +6,7 @@ public class DiceRoll {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in); //start input stream
         boolean loopBreak = true;
-        while (loopBreak != false) {
+        while (loopBreak) {
             System.out.println("Would you like to roll a dice? [y/n]: ");
             String input= sc.nextLine();
             if (input.equals("y")) {
