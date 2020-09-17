@@ -22,4 +22,6 @@ public class RockPaperScissors {
                 System.out.println("You chose Scissors");
         }
     }
+
+
 }
