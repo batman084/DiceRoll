@@ -3,24 +3,21 @@ import java.util.Random;
 
 public class DiceRoll {
     public static void main(String[] args) {
-        OUTER_LOOP: //label
-        for (;;) {
-            Scanner sc= new Scanner(System.in); //start input stream
+        Scanner sc= new Scanner(System.in); //start input stream
+        boolean loopBreak = true;
+        while (loopBreak) {
             System.out.println("Would you like to roll a dice? [y/n]: ");
             String input= sc.nextLine();
-            LOOP: //label
             if (input.equals("y")) {
-
                 System.out.println("Proceeding with roll");
                 rollDice();
             }
             else if (input.equals("n")) {
                 System.out.println("Skipping dice roll");
-                break OUTER_LOOP;
+                loopBreak = false;
             }
             else {
                 System.out.println("Your input is not accepted. Please try again");
-                break LOOP;
             }
         }
         System.out.println();
@@ -62,7 +59,6 @@ public class DiceRoll {
         Random rand = new Random();
         int lastface = 100;
         for (int x =0; x<5;) {
-            int[] diceface = {1, 2, 3, 4, 5, 6};
             int upperBound = 6;
             int int_rando = rand.nextInt(upperBound);
             switch (int_rando) {
