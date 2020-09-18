@@ -19,34 +19,21 @@ public class MainMenu {
                     break;
                 case 1:
                     System.out.println("You have chosen to play Dice Roll.");
-                    runDiceRoll();
+                    DiceRoll.rollDice();
                     break;
                 case 2:
                     System.out.println("You have chosen to play Coin Flip");
-                    runCoinFlip();
+                    CoinFlip.coinFlip();
                     break;
                 case 3:
                     System.out.println("You have chosen to play Rock Paper Scissors");
-                    runRPS();
+                    RockPaperScissors.throwRockPaperScissors();
                     break;
             }
 
         }
         System.out.println("Thank you for playing. You are exiting.");
         }
-
-    //dice roll
-    public static void runDiceRoll() {
-        DiceRoll.rollDice();
-    }
-    //coin flip
-    public static void runCoinFlip() {
-        CoinFlip.coinFlip();
-    }
-    //rock paper scissors
-    public static void runRPS() {
-        RockPaperScissors.throwRockPaperScissors();
-    }
 
 
 }
