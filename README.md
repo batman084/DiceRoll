@@ -1,4 +1,4 @@
-# DiceRoll
+# Mini Games
 Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock/Paper/Scissors, or Coin Flip. All of our projects have ASCII art to enhance your experience. 
 
 ## Project Goals/Features:
