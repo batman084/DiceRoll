@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class DiceRoll {
-
     public static void rollDice() {
+
 
         Random rand = new Random(); //Instance of new random class
         int[] diceFace = {1, 2, 3, 4, 5, 6};
