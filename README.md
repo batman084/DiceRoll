@@ -24,7 +24,7 @@ Writing Classes  15% | Mini Games defines RockPaperScissors, DiceRoll, CoinFlip,
 Arrays 10% | Mini Games uses arrays in multiple places
 
 ### Project Credits
-Gautam Gupta - @batman084  
-Tanay Shah - @Altoid0  
-Dhruv Kanetkar - @DhruvK0  
-Dhruv Sengupta - @DaHippoBear  
+Gautam Gupta - [@batman084](https://github.com/batman084)  
+Tanay Shah - [@Altoid0](https://github.com/Altoid0)
+Dhruv Kanetkar - [@DhruvK0](https://github.com/DhruvK0)
+Dhruv Sengupta - [@DaHippoBear](https://github.com/DaHippoBear)  
