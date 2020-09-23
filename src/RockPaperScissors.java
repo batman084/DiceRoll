@@ -4,11 +4,12 @@ import java.util.Random;
 public class RockPaperScissors {
     public static void throwRockPaperScissors() {
         boolean loop = true;
+        System.out.println("Welcome to Rock Paper Scissors!");
         // User prompt
         while (loop) {
-            System.out.println("Welcome to Rock Paper Scissors!");
+
             Scanner rps = new Scanner(System.in);
-            System.out.println("Lets play Rock Paper Scissors. The computer will randomly chose an option. What do you chose? (Rock/Paper/Scissors) ");
+            System.out.println("Lets play Rock Paper Scissors. The computer will randomly chose an option. What do you chose? (Rock/Paper/Scissors/0 to exit) ");
             String userInput = rps.nextLine();
             String userLower = userInput.toLowerCase();
             Random computerValue = new Random();
@@ -35,6 +36,11 @@ public class RockPaperScissors {
 
                 default:
                     break;
+
+                case "0":
+                    loop = false;
+                    break;
+
             }
         }
     }
