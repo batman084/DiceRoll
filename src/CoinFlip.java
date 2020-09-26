@@ -198,35 +198,5 @@ class FlipAnimator {
 //            System.out.print("\033[H\033[2J");
             i++;
         }
-
-        // // monkeys (non-primitive) defined in constructor knows its length
-        // int monkeyCount = coins.length;
-        // for (int i = monkeyCount; i >= 0; i--)  //loops through 2D array length backwards
-        // {
-
-        //     //this print statement shows current count of Monkeys
-        //     //  concatenation (+) of the loop variable and string to form a countdown message
-
-        //     //how many separate parts are there in a monkey monkey?
-        //     for (int row = 0; row < monkeyCount; row++) {  //cycles through "cells" of 2d array
-
-        //     /*cycles through columns to print
-        //     each monkey part by part, will eventually print entire column*/
-        //         for (int col = 0; col < coins[row].length; col++) {
-
-        //             // prints specific part of the monkey from the column
-        //             System.out.print(coins[row][col] + " ");
-
-        //             //this is new line between separate parts
-        //             System.out.println();
-        //         }
-
-        //         //this new line gives separation between stanza of poem
-        //         System.out.println();
-        //     }
-
-        //     //countdown for poem, decrementing monkeyCount variable by 1
-        //     monkeyCount -= 1;
-        // }
     }
 }
