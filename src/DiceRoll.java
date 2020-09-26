@@ -1,5 +1,4 @@
-// Import needed libraries (Random and Scanner)
-import java.util.Scanner;
+// Import needed libraries (Random)
 import java.util.Random;
 
 // Define main DiceRoll class
