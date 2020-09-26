@@ -1,20 +1,36 @@
+// Import random library for coinflip decision
 import java.util.Random;
 
-
+//declare class CoinFlip
 public class CoinFlip {
+
+    //driver for coinflip testing
     public static void main(String[] args) throws InterruptedException {
+
+        //welcome message
         System.out.println("Welcome to Coin Flipper!!!");
+
+        //instance of a class FlipAnimator and execution of printflip method
         new FlipAnimator().printFlip();
+
+        //execute main coinflip method
         coinFlip();
-        // main function to run the coin flipper method
     }
     static void coinFlip() {
         // initialize random object to make a random selector of heads and tails
         Random rand1 = new Random();
+
+        // set bounds for random number generator
+        // the number 2 represents the array count (0 and 1), not the actual number which is output
         int upperBound = 2;
+
+        // select random number using Random object and the defined upper bound
         int int_random = rand1.nextInt(upperBound);
+
+        // switch case for logic and printing
         switch (int_random) {
             case 0:
+                // print heads ascii art
                 System.out.println("               `:/+ssssssssssss+/:`               \n" +
                         "           `:oyo/:-   .:: :.   --/oso/`           \n" +
                         "         :sy/.`-.-:.  `..`.`   :. -`./ss:         \n" +
@@ -40,9 +56,12 @@ public class CoinFlip {
                         "         :ss/.---.       /. :`  `...:/ss:         \n" +
                         "           `/oyo/:/:::--.-:----://oyo/`           \n" +
                         "               `:/osssssssssssso/:`    ");
+
+                // print outcome in text
                 System.out.println("You flipped heads");
                 break;
             case 1:
+                // print tails ascii art
                 System.out.println("                 .---------:---..                  \n" +
                         "            .-:/-/://-/.+../:/-:/--`              \n" +
                         "          --:-.`:-:-.....  .. `::/-/-.            \n" +
@@ -64,6 +83,8 @@ public class CoinFlip {
                         "         -:+:..`: :.`  -   -.  . `/:/:`           \n" +
                         "            -://.-/:    ... ::/-:/:-              \n" +
                         "               `-..:+///////:..-.   ");
+
+                // print outcome in text
                 System.out.println("You flipped tails");
                 break;
         }
@@ -73,6 +94,7 @@ class FlipAnimator {
     // creates a 2D array to hold the frames of the coin flipping animation
     String [][] coins;
 
+    // Flip constructor, adds coin to 2d array
     public FlipAnimator() {
 
         coins = new String[][]{
