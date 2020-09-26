@@ -12,7 +12,7 @@ public class MainMenu {
             System.out.println("2. Coin Flip");
             System.out.println("3. Rock Paper Scissors");
             int menuChoice = sc.nextInt(); //make new variable to get user choice from input
-            System.out.println("You have chosen " + menuChoice); //tells the user what choice they chose
+            // System.out.println("You have chosen " + menuChoice); //tells the user what choice they chose
             switch (menuChoice) { //switch case for menu choice
                 case 0: //case for leaving the project
                     System.out.println("You have chosen to exit the Mini Games. We hope you had a good time!");
