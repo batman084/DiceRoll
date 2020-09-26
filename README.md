@@ -3,7 +3,7 @@ Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock
 
 ## Project Goals/Features:
 * Randomly selects number out of an array to choose the number of each of the dice
-* Rolling Animation while the dice are being rolle
+* Rolling Animation while the dice are being rolled
 * There are two dice that are rolled, and both are shown as the final output 
 * ASCII art with the dice face
   
