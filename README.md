@@ -1,6 +1,31 @@
 # Mini Games
 Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock/Paper/Scissors, or Coin Flip. All of our projects have ASCII art to enhance your experience. 
 
+## GitHub Guide - How to run our project on GitHub?
+
+Pre-requisites: 
+- GitHub Desktop - Downloaded
+- IntelliJ - Downloaded
+
+Downloading our code:
+- Make a new folder on your host
+- Open an admin powershell tab and navigate to the folder you created
+- Type in the following command: 
+- git clone https://github.com/batman084/Mini-Games.git
+
+Opening our code:
+- Open IntelliJ
+- File → Open
+- Navigate to the folder you created with our code cloned
+- Click open on that folder
+- In the top toolbar, click on your configurations option: 
+- Click the arrow and click edit configuration: 
+- Clock on the three dots next to main class and select MainMenu: 
+- Then click “Ok”
+- Then click on the green arrow in the top toolbar: 
+- Code will now run in Terminal :)
+
+
 ## Project Goals/Features:
 * Randomly selects number out of an array to choose the number of each of the dice
 * Rolling Animation while the dice are being rolled
