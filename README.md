@@ -11,7 +11,7 @@ Downloading our code:
 - Make a new folder on your host
 - Open an admin powershell tab and navigate to the folder you created
 - Type in the following command: 
-- git clone https://github.com/batman084/Mini-Games.git
+git clone https://github.com/batman084/Mini-Games.git
 
 Opening our code:
 - Open IntelliJ
