@@ -5,7 +5,7 @@ import java.util.Random;
 public class DiceRoll {
 
     public static void forDiceRoll(int repeatTimes) {
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < repeatTimes; i++) {
             rollDice();
         }
     }
