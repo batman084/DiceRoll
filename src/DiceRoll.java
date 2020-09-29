@@ -4,6 +4,12 @@ import java.util.Random;
 // Define main DiceRoll class
 public class DiceRoll {
 
+    public static void forDiceRoll(int repeatTimes) {
+        for (int i = 0; i <= 5; i++) {
+            rollDice();
+        }
+    }
+
     //declare main method rollDice within DiceRoll class
     public static void rollDice() {
 
