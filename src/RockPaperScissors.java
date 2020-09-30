@@ -116,14 +116,14 @@ public class RockPaperScissors {
                     }
                     break;
 
-                // Default case if the user input doesn't match rock (r), paper (p), scissors (s)
-                default:
-                    break;
-
                 // Exit case
                 case "0": // we need to do case "0": instead of case 0: since we are taking user input as a string and case 0: relies on an integer input
                     loop = false;
                     break;
+
+                // Default case if the user input doesn't match rock (r), paper (p), scissors (s)
+                default:
+                    System.out.println("Your input did not match. Please try again. \n");
 
             }
         }

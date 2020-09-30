@@ -32,6 +32,8 @@ public class MainMenu {
                     System.out.println("You have chosen to play Rock Paper Scissors");
                     RockPaperScissors.throwRockPaperScissors();
                     break;
+                default:
+                    System.out.println("Your input is not correct. Please try again.\n");
             }
 
         }
