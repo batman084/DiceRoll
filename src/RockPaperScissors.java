@@ -11,6 +11,7 @@ public class RockPaperScissors {
         // Declaration of boolean for while loop
         boolean loop = true;
 
+
         // Welcome message
         System.out.println("Welcome to Rock Paper Scissors!");
 
@@ -29,6 +30,9 @@ public class RockPaperScissors {
 
             // Random object declration
             Random computerValue = new Random();
+            Random rand = new Random();
+            int upperBound = 3;
+            int int_random = rand.nextInt(upperBound);
 
             // switch statement for RPS logic
             switch (userLower) {
@@ -36,22 +40,80 @@ public class RockPaperScissors {
                 //rock case
                 case "r":
                 case "rock":
+
                     rock();
+                    rock();
+
+
                     System.out.println("You chose Rock");
+
+                    switch (int_random) {
+                        case 0:
+                            rock();
+                            System.out.println("You tied!");
+                            break;
+
+                        case 1:
+                            rp();
+                            System.out.println("You lost!");
+                            break;
+
+                        case 2:
+                            rs();
+                            System.out.println("You won!");
+                            break;
+                    }
                     break;
 
                 //paper case
                 case "p":
                 case "paper":
-                    paper();
+                    rock();
+                    rock();
+
                     System.out.println("You chose Paper");
+
+                    switch (int_random) {
+                        case 0:
+                            paper();
+                            System.out.println("You tied!");
+                            break;
+
+                        case 1:
+                            ps();
+                            System.out.println("You lost!");
+                            break;
+
+                        case 2:
+                            pr();
+                            System.out.println("You won!");
+                            break;
+                    }
                     break;
 
                 //paper scissors
                 case "s":
                 case "scissors":
-                    scissors();
+                    rock();
+                    rock();
                     System.out.println("You chose Scissors");
+
+                    switch (int_random) {
+                        case 0:
+                            scissors();
+                            System.out.println("You tied!");
+                            break;
+
+                        case 1:
+                            sr();
+                            System.out.println("You lost!");
+                            break;
+
+                        case 2:
+                            sp();
+                            System.out.println("You won!");
+                            break;
+                    }
                     break;
 
                 // Default case if the user input doesn't match rock (r), paper (p), scissors (s)
@@ -110,12 +172,12 @@ public class RockPaperScissors {
                         "---.__(___)\t\t\t        (___)__.---");
     }
     static void pr() {
-        System.out.println("     _______\\t\\t\\t\\t\\t\" +           \" _______\n" +
+        System.out.println("     _______\t\t\t\t " +           "    _______\n" +
                 "---'    ____)____\t\t        (____   '---\n" +
                 "           ______)\t\t      (_____)      \n" +
                 "          _______)\t\t      (_____)      \n" +
-                "         _______)\t\t      (____)      \n" +
-                "---.__________)\\t\\t\\t       (___)___.----");
+                "         _______)\t\t       (____)      \n" +
+                "---.__________)\t\t\t       (___)___.----");
     }
     static void ps() {
         System.out.println("     _______\t\t\t\t\t_______    \n" +
@@ -126,19 +188,19 @@ public class RockPaperScissors {
                 "---.__________)\t\t\t        (___)__.---");
     }
     static void sr() {
-        System.out.println("    _______\\t\\t\\t\\t\\t\" +           \" _______\n" +
+        System.out.println("    _______\t\t\t\t\t " +           "    _______\n" +
                 "---'   ____)____\t\t        (____   '---\n" +
                 "          ______)\t\t      (_____)      \n" +
                 "       __________)\t\t      (_____)      \n" +
-                "      (____)\t\t      (____)      \n" +
-                "---.__(___)\\t\\t\\t       (___)___.----");
+                "      (____)\t\t\t      (____)      \n" +
+                "---.__(___)\t\t\t          (___)___.----");
     }
     static void sp() {
-        System.out.println("    _______\t\t\t\t_______\t    \n" +
+        System.out.println("    _______\t\t\t\t\t_______\t    \n" +
                 "---'   ____)____\t   ____(____    '---\n" +
                 "          ______)\t  (______\t    \n" +
                 "       __________)\t  (_______\t    \n" +
-                "      (____)\t   (_______         \n" +
+                "      (____)\t\t   (_______         \n" +
                 "---.__(___)\t\t     (__________.---");
     }
 
