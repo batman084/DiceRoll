@@ -32,7 +32,7 @@ public class MainMenu {
                     System.out.println("You have chosen to play Rock Paper Scissors");
                     RockPaperScissors.throwRockPaperScissors();
                     break;
-                default:
+                default: //default case runs if the input doesn't match any other case
                     System.out.println("Your input is not correct. Please try again.\n");
             }
 
