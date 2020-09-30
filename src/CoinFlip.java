@@ -4,19 +4,10 @@ import java.util.Random;
 //declare class CoinFlip
 public class CoinFlip {
 
-    //driver for coinflip testing
-    public static void main(String[] args) throws InterruptedException {
-
-        //welcome message
+    static void coinFlip() throws InterruptedException{
         System.out.println("Welcome to Coin Flipper!!!");
-
-        //instance of a class FlipAnimator and execution of printflip method
-        new FlipAnimator().printFlip();
-
-        //execute main coinflip method
-        coinFlip();
-    }
-    static void coinFlip() {
+        //run animation frame method
+        animationFrames();
         // initialize random object to make a random selector of heads and tails
         Random rand1 = new Random();
 
@@ -58,7 +49,7 @@ public class CoinFlip {
                         "               `:/osssssssssssso/:`    ");
 
                 // print outcome in text
-                System.out.println("You flipped heads");
+                System.out.println("You flipped heads!!! \n");
                 break;
             case 1:
                 // print tails ascii art
@@ -85,118 +76,108 @@ public class CoinFlip {
                         "               `-..:+///////:..-.   ");
 
                 // print outcome in text
-                System.out.println("You flipped tails");
+                System.out.println("You flipped tails!!! \n");
                 break;
         }
     }
-}
-class FlipAnimator {
-    // creates a 2D array to hold the frames of the coin flipping animation
-    String [][] coins;
 
-    // Flip constructor, adds coin to 2d array
-    public FlipAnimator() {
+    public static void animationFrames() throws InterruptedException{
+        String [][] coins;
+
 
         coins = new String[][]{
                 {
-                        //coin frame 1
-                        "          ████████████",   //[0][0]
-                        "      ████░░░░░░░░░░░░████", //[0][1]
-                        "    ██░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░██", //[0][2]
-                        "  ██░░░░▒▒░░░░░░░░░░░░▒▒░░░░██", //[0][3]
-                        "  ██░░▒▒░░░░      ░░░░░░  ░░██", //[0][4]
-                        "██░░▒▒░░░░░░  ░░░░▒▒░░░░░░  ░░██", //[0][5]
-                        "██░░▒▒░░      ░░░░░░  ░░░░  ░░██", //[0][6]
-                        "██░░▒▒░░  ░░░░░░░░░░░░▒▒░░  ░░██", //[0][7]
-                        "██░░▒▒░░  ░░░░░░░░░░░░▒▒░░  ░░██", //[0][8]
-                        "██░░▒▒░░░░▒▒░░░░░░▒▒▒▒▒▒░░  ░░██", //[0][9]
-                        "██░░▒▒░░░░░░  ░░░░▒▒░░░░░░  ░░██", //[0][10]
-                        "  ██░░▒▒░░░░░░▒▒▒▒▒▒░░░░  ░░██", //[0][11]
-                        "  ██░░░░  ░░░░░░░░░░░░  ░░░░██", //[0][12]
-                        "    ██░░░░            ░░░░██", //[0][13]
-                        "      ████░░░░░░░░░░░░████", //[0][14]
-                        "          ████████████" //[0][15]
+                        "          ████████████ \n"+
+                                "      ████░░░░░░░░░░░░████ \n"+
+                                "    ██░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░██ \n"+
+                                "  ██░░░░▒▒░░░░░░░░░░░░▒▒░░░░██ \n"+
+                                "  ██░░▒▒░░░░      ░░░░░░  ░░██ \n"+
+                                "██░░▒▒░░░░░░  ░░░░▒▒░░░░░░  ░░██ \n"+
+                                "██░░▒▒░░      ░░░░░░  ░░░░  ░░██ \n"+
+                                "██░░▒▒░░  ░░░░░░░░░░░░▒▒░░  ░░██ \n"+
+                                "██░░▒▒░░  ░░░░░░░░░░░░▒▒░░  ░░██ \n"+
+                                "██░░▒▒░░░░▒▒░░░░░░▒▒▒▒▒▒░░  ░░██ \n"+
+                                "██░░▒▒░░░░░░  ░░░░▒▒░░░░░░  ░░██ \n"+
+                                "  ██░░▒▒░░░░░░▒▒▒▒▒▒░░░░  ░░██ \n"+
+                                "  ██░░░░  ░░░░░░░░░░░░  ░░░░██ \n"+
+                                "    ██░░░░            ░░░░██ \n"+
+                                "      ████░░░░░░░░░░░░████ \n"+
+                                "          ████████████ \n"
                 },
                 {
                         // coin frame 2
-                        "          ████████████",
-                        "        ██░░░░░░░░░░░░██",
-                        "      ██░░▒▒▒▒▒▒▒▒▒▒░░░░██",
-                        "    ██░░▒▒░░░░░░░░░░  ░░░░██",
-                        "    ██░░▒▒░░    ░░░░  ░░░░██",
-                        "  ██░░▒▒░░░░  ░░▒▒░░░░  ░░░░██",
-                        "  ██░░▒▒      ░░░░  ░░  ░░░░██",
-                        "  ██░░▒▒  ░░░░░░░░░░▒▒  ░░▒▒██",
-                        "  ██░░▒▒  ░░░░░░░░░░▒▒  ░░▒▒██",
-                        "  ██░░▒▒░░▒▒░░░░▒▒▒▒▒▒  ░░▒▒██",
-                        "  ██░░▒▒░░░░  ░░▒▒░░░░  ░░▒▒██",
-                        "    ██░░▒▒░░░░▒▒▒▒░░  ░░▒▒██",
-                        "    ██░░▒▒░░░░░░░░░░  ░░▒▒██",
-                        "      ██░░          ░░▒▒██",
-                        "        ██░░░░░░░░░░▒▒██",
-                        "          ████████████"
+                        "          ████████████\n"+
+                                "        ██░░░░░░░░░░░░██\n"+
+                                "      ██░░▒▒▒▒▒▒▒▒▒▒░░░░██\n"+
+                                "    ██░░▒▒░░░░░░░░░░  ░░░░██\n"+
+                                "    ██░░▒▒░░    ░░░░  ░░░░██\n"+
+                                "  ██░░▒▒░░░░  ░░▒▒░░░░  ░░░░██\n"+
+                                "  ██░░▒▒      ░░░░  ░░  ░░░░██\n"+
+                                "  ██░░▒▒  ░░░░░░░░░░▒▒  ░░▒▒██\n"+
+                                "  ██░░▒▒  ░░░░░░░░░░▒▒  ░░▒▒██\n"+
+                                "  ██░░▒▒░░▒▒░░░░▒▒▒▒▒▒  ░░▒▒██\n"+
+                                "  ██░░▒▒░░░░  ░░▒▒░░░░  ░░▒▒██\n"+
+                                "    ██░░▒▒░░░░▒▒▒▒░░  ░░▒▒██\n"+
+                                "    ██░░▒▒░░░░░░░░░░  ░░▒▒██\n"+
+                                "      ██░░          ░░▒▒██\n"+
+                                "        ██░░░░░░░░░░▒▒██\n"+
+                                "          ████████████\n"
                 },
                 {
                         // coin frame 3
-                        "            ████████",
-                        "          ██░░░░░░░░██",
-                        "          ██░░▒▒░░░░██",
-                        "        ██░░▒▒░░  ░░░░██",
-                        "        ██░░▒▒    ░░░░██",
-                        "        ██░░▒▒░░  ░░░░██",
-                        "        ██░░▒▒    ░░░░██",
-                        "        ██░░▒▒░░  ▒▒▒▒██",
-                        "        ██░░▒▒░░  ▒▒▒▒██",
-                        "        ██░░▒▒▒▒  ▒▒▒▒██",
-                        "        ██░░▒▒▒▒  ▒▒▒▒██",
-                        "        ██░░▒▒▒▒  ▒▒▒▒██",
-                        "        ██░░░░░░  ▒▒▒▒██",
-                        "          ██░░  ▒▒▒▒██",
-                        "          ██░░░░▒▒▒▒██",
-                        "            ████████"
+                        "            ████████\n"+
+                                "          ██░░░░░░░░██\n"+
+                                "          ██░░▒▒░░░░██\n"+
+                                "        ██░░▒▒░░  ░░░░██\n"+
+                                "        ██░░▒▒    ░░░░██\n"+
+                                "        ██░░▒▒░░  ░░░░██\n"+
+                                "        ██░░▒▒    ░░░░██\n"+
+                                "        ██░░▒▒░░  ▒▒▒▒██\n"+
+                                "        ██░░▒▒░░  ▒▒▒▒██\n"+
+                                "        ██░░▒▒▒▒  ▒▒▒▒██\n"+
+                                "        ██░░▒▒▒▒  ▒▒▒▒██\n"+
+                                "        ██░░▒▒▒▒  ▒▒▒▒██\n"+
+                                "        ██░░░░░░  ▒▒▒▒██\n"+
+                                "          ██░░  ▒▒▒▒██\n"+
+                                "          ██░░░░▒▒▒▒██\n"+
+                                "            ████████\n\n"
                 },
                 {
                         // coin frame 4
-                        "            ████████",
-                        "            ██░░░░██",
-                        "            ██░░░░██",
-                        "            ██░░░░██",
-                        "            ██░░░░██",
-                        "            ██░░░░██",
-                        "            ██░░░░██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ██▒▒▒▒██",
-                        "            ████████"
+                        "            ████████\n"+
+                                "            ██░░░░██\n"+
+                                "            ██░░░░██\n"+
+                                "            ██░░░░██\n"+
+                                "            ██░░░░██\n"+
+                                "            ██░░░░██\n"+
+                                "            ██░░░░██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n"+
+                                "            ██▒▒▒▒██\n" +
+                                "            ██▒▒▒▒██\n" +
+                                "            ████████\n"
                 },
         };
 
-    }
-    // method to print the frames and clear terminal after each frame so that the animation looks smooth
-    public void printFlip() throws InterruptedException {
-        //begin the poe
-        System.out.println();
-        System.out.println("Flipping Coin");
-        int i = 0;
-        while (i < 5){
-            System.out.println(coins[0][0]);
-//            Thread.sleep(100);
-//            System.out.print("\033[H\033[2J");
-            System.out.println(coins[1]);
-//            Thread.sleep(100);
-//            System.out.print("\033[H\033[2J");
-            System.out.println(coins[2]);
-//            Thread.sleep(100);
-//            System.out.print("\033[H\033[2J");
-            System.out.println(coins[3]);
-//            Thread.sleep(100);
-//            System.out.print("\033[H\033[2J");
-            i++;
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 4; j++){
+                System.out.println(coins[j][0]);
+                Thread.sleep(100);
+                System.out.print("\033[H\033[2J");
+            }
+            for (int r = 2; r < 0; r--) {
+                System.out.println(coins[r][0]);
+                Thread.sleep(100);
+                System.out.print("\033[H\033[2J");
+            }
         }
+        System.out.println("And.......");
+        Thread.sleep(1000);
+
     }
+
 }
