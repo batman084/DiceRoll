@@ -63,7 +63,6 @@ public class DiceRoll {
             // Print final result to console so user can easily see
             System.out.println("You rolled a " + diceFace[int_random]);
             Thread.sleep(1200);
-            System.out.print("\033[H\033[2J");
         }
         System.out.println("Here are all of you rolls");
         for (int i : rolls) {
