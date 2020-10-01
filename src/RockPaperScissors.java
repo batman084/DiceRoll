@@ -31,7 +31,9 @@ public class RockPaperScissors {
             // Random object declration
             Random computerValue = new Random();
             Random rand = new Random();
+            //random int to pick computer hand
             int upperBound = 3;
+            //picks random number from 0-2
             int int_random = rand.nextInt(upperBound);
 
             // switch statement for RPS logic
@@ -45,8 +47,7 @@ public class RockPaperScissors {
                     Thread.sleep(600);
                     rock();
                     Thread.sleep(600);
-                    sr();
-                    Thread.sleep(600);
+
 
 
                     System.out.println("You chose Rock");
