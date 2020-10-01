@@ -1,4 +1,7 @@
 # Mini Games
+
+[![Generic-Badge](https://img.shields.io/badge/license-i--like--ya--code--g-blue)](https://shields.io/)
+
 Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock/Paper/Scissors, or Coin Flip. All of our projects have ASCII art to enhance your experience. 
 
 ## GitHub Guide - How to run our project on GitHub?
@@ -38,6 +41,8 @@ Opening our code:
   * If/Else Statements
   * Classes
   * Primitive Data Types
+  * 2D Arrays
+  * Array Lists
 
 ## Unit -> Mini Game usage
 Unit | Mini Game Usage | Example
