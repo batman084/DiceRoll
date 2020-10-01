@@ -21,8 +21,8 @@ public class MainMenu {
                 case 1: //case for running Dice Roll
                     System.out.println("You have chosen to play Dice Roll.");
                     System.out.println("How many times would you like to roll a dice?");
-                    int repeatTimes = sc.nextInt();
-                    DiceRoll.forDiceRoll(repeatTimes);
+                    int repeat = sc.nextInt();
+                    DiceRoll.rollDice(repeat);
                     break;
                 case 2: //case for Coin Flip
                     System.out.println("You have chosen to play Coin Flip");

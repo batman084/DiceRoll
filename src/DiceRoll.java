@@ -1,17 +1,12 @@
 // Import needed libraries (Random)
 import java.util.Random;
+import java.util.ArrayList;
 
 // Define main DiceRoll class
 public class DiceRoll {
 
-    public static void forDiceRoll(int repeatTimes) {
-        for (int i = 0; i < repeatTimes; i++) {
-            rollDice();
-        }
-    }
-
     //declare main method rollDice within DiceRoll class
-    public static void rollDice() {
+    public static void rollDice(int repeatTimes) throws InterruptedException {
 
         //Instance of new random class, creation of object rand from Random class
         Random rand = new Random();
@@ -22,41 +17,58 @@ public class DiceRoll {
         // Define index upper bound of rand object and nextInt method
         int upperBound = 6;
 
-        // Declare random integer using nextInt method
-        int int_random = rand.nextInt(upperBound);
+        ArrayList<Integer> rolls = new ArrayList<Integer>();
 
-        // Queue animation for dice roll
-        rollAnimation();
+        for (int i = 0; i < repeatTimes; i++) {
 
-        // Switch case logic for different dice faces
-        switch (int_random) {
-            case 0:
-                // print the ascii art for dice face 1
-                printface1();
-                break;
-            case 1:
-                // print the ascii art for dice face 2
-                printface2();
-                break;
-            case 2:
-                // print the ascii art for dice face 3
-                printface3();
-                break;
-            case 3:
-                // print the ascii art for dice face 4
-                printface4();
-                break;
-            case 4:
-                // print the ascii art for dice face 5
-                printface5();
-                break;
-            case 5:
-                // print the ascii art for dice face 6
-                printface6();
-                break;
+            // Declare random integer using nextInt method
+            int int_random = rand.nextInt(upperBound);
+
+            // Queue animation for dice roll
+            rollAnimation();
+
+            // Switch case logic for different dice faces
+            switch (int_random) {
+                case 0:
+                    // print the ascii art for dice face 1
+                    printface1();
+                    rolls.add(1);
+                    break;
+                case 1:
+                    // print the ascii art for dice face 2
+                    printface2();
+                    rolls.add(2);
+                    break;
+                case 2:
+                    // print the ascii art for dice face 3
+                    printface3();
+                    rolls.add(3);
+                    break;
+                case 3:
+                    // print the ascii art for dice face 4
+                    printface4();
+                    rolls.add(4);
+                    break;
+                case 4:
+                    // print the ascii art for dice face 5
+                    printface5();
+                    rolls.add(5);
+                    break;
+                case 5:
+                    // print the ascii art for dice face 6
+                    printface6();
+                    rolls.add(6);
+                    break;
+            }
+            // Print final result to console so user can easily see
+            System.out.println("You rolled a " + diceFace[int_random]);
+            Thread.sleep(1200);
+            System.out.print("\033[H\033[2J");
         }
-        // Print final result to console so user can easily see
-        System.out.println("You rolled a " + diceFace[int_random]);
+        System.out.println("Here are all of you rolls");
+        for (int i : rolls) {
+            System.out.println(i);
+        }
     }
 
     // Dice roll animation method
