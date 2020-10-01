@@ -1,6 +1,7 @@
 # Mini Games
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub) 
+
 Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock/Paper/Scissors, or Coin Flip. All of our projects have ASCII art to enhance your experience. 
 
 ## How to run our code?
