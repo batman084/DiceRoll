@@ -38,6 +38,8 @@ Opening our code:
   * If/Else Statements
   * Classes
   * Primitive Data Types
+  * 2D Arrays
+  * Array Lists
 
 ## Unit -> Mini Game usage
 Unit | Mini Game Usage | Example
