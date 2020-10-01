@@ -1,6 +1,6 @@
 # Mini Games
 
-[![Generic-Badge](https://img.shields.io/badge/license-i--like--ya--code--g-blue)](https://shields.io/)
+[![Generic-Badge](https://img.shields.io/badge/license-i--like--ya--code--g-blue)](https://shields.io/)[![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock/Paper/Scissors, or Coin Flip. All of our projects have ASCII art to enhance your experience. 
 
