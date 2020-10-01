@@ -42,27 +42,28 @@ public class RockPaperScissors {
                 //rock case
                 case "r":
                 case "rock":
-
+            //initial throwing of hands (rock rock)
                     rock();
                     Thread.sleep(600);
                     rock();
                     Thread.sleep(600);
 
 
-
+            //shows what you picked
                     System.out.println("You chose Rock");
 
                     switch (int_random) {
+                        //case if the cpu picks rock
                         case 0:
                             rock();
                             System.out.println("You tied!");
                             break;
-
+                        //case if the cpu picks paper
                         case 1:
                             rp();
                             System.out.println("You lost!");
                             break;
-
+                        //case if the cpu picks scissors
                         case 2:
                             rs();
                             System.out.println("You won!");
@@ -73,24 +74,26 @@ public class RockPaperScissors {
                 //paper case
                 case "p":
                 case "paper":
+                    //initial throwing of hands (rock rock)
                     rock();
                     Thread.sleep(600);
                     rock();
                     Thread.sleep(600);
-
+                    //displays what you chose
                     System.out.println("You chose Paper");
 
                     switch (int_random) {
+                        //case if the cpu picks paper
                         case 0:
                             paper();
                             System.out.println("You tied!");
                             break;
-
+                        //case if the cpu picks scissors
                         case 1:
                             ps();
                             System.out.println("You lost!");
                             break;
-
+                        //case if the cpu picks rock
                         case 2:
                             pr();
                             System.out.println("You won!");
@@ -98,26 +101,29 @@ public class RockPaperScissors {
                     }
                     break;
 
-                //paper scissors
+                //scissors case
                 case "s":
                 case "scissors":
+                    //initial rock throwdown
                     rock();
                     Thread.sleep(600);
                     rock();
                     Thread.sleep(600);
+                    //say what you chose
                     System.out.println("You chose Scissors");
 
                     switch (int_random) {
+                        //case if cpu picks scissors
                         case 0:
                             scissors();
                             System.out.println("You tied!");
                             break;
-
+                        //case if cpu picked rock
                         case 1:
                             sr();
                             System.out.println("You lost!");
                             break;
-
+                        //case if cpu picked paper
                         case 2:
                             sp();
                             System.out.println("You won!");
@@ -137,6 +143,7 @@ public class RockPaperScissors {
             }
         }
     }
+    //functions for printing symbols
     static void rock() {
         System.out.println(
                 "    _______\t\t\t\t\t" +           " _______\n" +
