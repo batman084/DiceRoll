@@ -6,7 +6,7 @@ import java.util.Random;
 public class RockPaperScissors {
 
     // Declare main rps method
-    public static void throwRockPaperScissors() {
+    public static void throwRockPaperScissors() throws InterruptedException {
 
         // Declaration of boolean for while loop
         boolean loop = true;
@@ -42,7 +42,11 @@ public class RockPaperScissors {
                 case "rock":
 
                     rock();
+                    Thread.sleep(600);
                     rock();
+                    Thread.sleep(600);
+                    sr();
+                    Thread.sleep(600);
 
 
                     System.out.println("You chose Rock");
@@ -69,7 +73,9 @@ public class RockPaperScissors {
                 case "p":
                 case "paper":
                     rock();
+                    Thread.sleep(600);
                     rock();
+                    Thread.sleep(600);
 
                     System.out.println("You chose Paper");
 
@@ -95,7 +101,9 @@ public class RockPaperScissors {
                 case "s":
                 case "scissors":
                     rock();
+                    Thread.sleep(600);
                     rock();
+                    Thread.sleep(600);
                     System.out.println("You chose Scissors");
 
                     switch (int_random) {
@@ -190,10 +198,10 @@ public class RockPaperScissors {
     static void sr() {
         System.out.println("    _______\t\t\t\t\t " +           "    _______\n" +
                 "---'   ____)____\t\t        (____   '---\n" +
-                "          ______)\t\t      (_____)      \n" +
-                "       __________)\t\t      (_____)      \n" +
+                "          ______)\t\t     (_____)      \n" +
+                "       __________)\t\t     (_____)      \n" +
                 "      (____)\t\t\t      (____)      \n" +
-                "---.__(___)\t\t\t          (___)___.----");
+                "---.__(___)\t\t\t           (___)___.----");
     }
     static void sp() {
         System.out.println("    _______\t\t\t\t\t_______\t    \n" +
@@ -201,7 +209,7 @@ public class RockPaperScissors {
                 "          ______)\t  (______\t    \n" +
                 "       __________)\t  (_______\t    \n" +
                 "      (____)\t\t   (_______         \n" +
-                "---.__(___)\t\t     (__________.---");
+                "---.__(___)\t\t         (__________.---");
     }
 
 
