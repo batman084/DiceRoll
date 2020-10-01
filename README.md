@@ -6,7 +6,7 @@ Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock
 
 ## How to run our code?
 Prerequisites: 
--[![Java](https://www.oracle.com/java/technologies/javase-downloads.html)]
+- [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 Download the releases the open an admin terminal.
 CD into the directory and run the following command: `java -jar <file name>`
