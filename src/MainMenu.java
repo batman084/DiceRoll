@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MainMenu {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
         Scanner sc= new Scanner(System.in); //initializes scanner for input
         boolean finalBreak = true; //boolean that controls the infinite while loop is created and set to true
         while(finalBreak) { //infinite while loop that will run until finalBreak is false
