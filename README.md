@@ -8,15 +8,14 @@ Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock
 Prerequisites: 
 - [Java JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
 
-Download the releases the open an admin terminal.
-CD into the directory and run the following command: `java -jar <file name>`
+Download the releases. Then open an admin terminal. CD into the directory and run the following command: `java -jar <file name>`
 
 
 ## Project Goals/Features:
-* Randomly selects number out of an array to choose the number of each of the dice
-* Rolling Animation while the dice are being rolled
-* There are two dice that are rolled, and both are shown as the final output 
-* ASCII art with the dice face
+DiceRoll - Dice Roll game where you roll a dice and dice faces are displayed
+RockPaperScissors - Game where you play rock paper scissors against the computer
+CoinFlip - A simple coin flip animatio
+MainMenu - Main file that is running. It calls the other files. 
   
 ## AP Test Parallels:
   * Arrays
