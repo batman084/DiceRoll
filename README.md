@@ -35,7 +35,8 @@ Using Objects 15% | Mini Games is using multiple Objects and String (non-primiti
 Boolean Expression and Control statement 40% | Mini Games uses if and switch/case | We use control expressions like "if" and "switch/case" to control how the code runs. We also use boolean expressions to make sure that the code runs until the user says no. 
 Writing Classes  10% | Mini Games defines RockPaperScissors, DiceRoll, CoinFlip, and MainMenu | We have different classes for each mini-game so that our code is modular and easier to edit
 Arrays 10% | Mini Games uses arrays in multiple places | We use arrays in DiceRoll.java and in RockPaperScissors.java to get a random case.  
-2D Arrays 5% | Mini games uses 2D arrays the coin flip animation | We use arrays in DiceRoll.java for holding the strings that contain the ASCII art for the dice. 
+2D Arrays 2.5% | Mini games uses 2D arrays the coin flip animation | We use arrays in CoinFlip.java for holding the strings that contain the ASCII art for the dice.  
+Array Lists 2.5% | Mini games uses array lists to store the number of rolls you do | We use array lists in DiceRoll.java to store the number of dice rolls that you have so that they can all be printed out at the end.
 
 ### Project Credits
 Contributor | GitHub Link
