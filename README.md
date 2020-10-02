@@ -12,10 +12,10 @@ Download the releases. Then open an admin terminal. CD into the directory and ru
 
 
 ## Project Goals/Features:
-DiceRoll - Dice Roll game where you roll a dice and dice faces are displayed
-RockPaperScissors - Game where you play rock paper scissors against the computer
-CoinFlip - A simple coin flip animatio
-MainMenu - Main file that is running. It calls the other files. 
+DiceRoll - Dice Roll game where you roll a dice and dice faces are displayed  
+RockPaperScissors - Game where you play rock paper scissors against the computer  
+CoinFlip - A simple coin flip animation game  
+MainMenu - Main file that is running. It calls the other files.   
   
 ## AP Test Parallels:
   * Arrays
