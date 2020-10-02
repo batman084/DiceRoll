@@ -38,7 +38,7 @@ Writing Classes  10% | Mini Games defines RockPaperScissors, DiceRoll, CoinFlip,
 Arrays 10% | Mini Games uses arrays in multiple places | We use arrays in DiceRoll.java and in RockPaperScissors.java to get a random case.  
 2D Arrays 2.5% | Mini games uses 2D arrays the coin flip animation | We use arrays in CoinFlip.java for holding the strings that contain the ASCII art for the dice.  
 Array Lists 2.5% | Mini games uses array lists to store the number of rolls you do | We use array lists in DiceRoll.java to store the number of dice rolls that you have so that they can all be printed out at the end.
-Iteration 5% | Mini games uses iteration for our main loops and our main files | We use iteration in MainMenu.java to go through all of our posibilities through if/else, while, and switch/case loops. 
+Iteration 5% | Mini games uses iteration for our main loops and our main files | We use iteration in MainMenu.java, RockPaperScissors, DiceRoll.java, and CoinFlip.java to go through all of our posibilities through if/else, while, and switch/case loops. 
 
 ### Project Credits
 Contributor | GitHub Link
