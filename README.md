@@ -22,7 +22,7 @@ MainMenu - Main file that is running. It calls the other files.
   * Objects
   * If/Else Statements
   * Classes
-  * Primitive Data Types  
+  * Primitive Data Types (Strings)  
   * 2D Arrays
   * Array Lists
   * Iteration
