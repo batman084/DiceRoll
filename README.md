@@ -26,7 +26,7 @@ CD into the directory and run the following command: `java -jar <file name>`
   * Primitive Data Types
   * 2D Arrays
   * Array Lists
-  * Itteration
+  * Iteration
 
 ## Unit -> Mini Game usage
 Unit | Mini Game Usage | Example
