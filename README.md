@@ -22,7 +22,7 @@ MainMenu - Main file that is running. It calls the other files.
   * Objects
   * If/Else Statements
   * Classes
-  * Primitive Data Types
+  * Primitive Data Types  
   * 2D Arrays
   * Array Lists
   * Iteration
@@ -30,7 +30,7 @@ MainMenu - Main file that is running. It calls the other files.
 ## Unit -> Mini Game usage
 Unit | Mini Game Usage | Example
 ---- | --------------- | -------
-Primative Types 15% | Mini Games uses integer and boolean types | MainMenu.java uses boolean types in while loop and switch cases use integer types
+Primative Types 15% | Mini Games uses integer, boolean types, and strings | MainMenu.java uses boolean types in while loop and switch cases use integer types
 Using Objects 15% | Mini Games is using multiple Objects and String (non-primitive data type) | We call objects of the different mini-game classes in MainMenu.java
 Boolean Expression and Control statement 40% | Mini Games uses if and switch/case | We use control expressions like "if" and "switch/case" to control how the code runs. We also use boolean expressions to make sure that the code runs until the user says no. 
 Writing Classes  10% | Mini Games defines RockPaperScissors, DiceRoll, CoinFlip, and MainMenu | We have different classes for each mini-game so that our code is modular and easier to edit
