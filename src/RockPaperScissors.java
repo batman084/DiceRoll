@@ -44,8 +44,15 @@ public class RockPaperScissors {
                 case "rock":
             //initial throwing of hands (rock rock)
                     rock();
+                    System.out.println("Rock.....");
                     Thread.sleep(600);
                     rock();
+                    System.out.println("Paper.....");
+                    Thread.sleep(600);
+                    rock();
+                    System.out.println("Scissors.....");
+                    Thread.sleep(600);
+                    System.out.println("Shoot!!!");
                     Thread.sleep(600);
 
 
@@ -76,11 +83,18 @@ public class RockPaperScissors {
                 case "paper":
                     //initial throwing of hands (rock rock)
                     rock();
+                    System.out.println("Rock.....");
                     Thread.sleep(600);
                     rock();
+                    System.out.println("Paper.....");
                     Thread.sleep(600);
+                    rock();
+                    System.out.println("Scissors.....");
+                    Thread.sleep(600);
+                    System.out.println("Shoot!!!");
                     //displays what you chose
                     System.out.println("You chose Paper");
+                    Thread.sleep(600);
 
                     switch (int_random) {
                         //case if the cpu picks paper
@@ -106,8 +120,15 @@ public class RockPaperScissors {
                 case "scissors":
                     //initial rock throwdown
                     rock();
+                    System.out.println("Rock.....");
                     Thread.sleep(600);
                     rock();
+                    System.out.println("Paper.....");
+                    Thread.sleep(600);
+                    rock();
+                    System.out.println("Scissors.....");
+                    Thread.sleep(600);
+                    System.out.println("Shoot!!!");
                     Thread.sleep(600);
                     //say what you chose
                     System.out.println("You chose Scissors");
