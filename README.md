@@ -40,7 +40,7 @@ Arrays 10% | Mini Games uses arrays in multiple places | We use arrays in DiceRo
 2D Arrays 5% | Mini games uses 2D arrays the coin flip animation | We use arrays in CoinFlip.java for holding the strings that contain the ASCII art for the dice.  
 Array Lists 5% | Mini games uses array lists to store the number of rolls you do | We use array lists in DiceRoll.java to store the number of dice rolls that you have so that they can all be printed out at the end.
 Iteration 5% | Mini games uses iteration for our main loops and our main files | We use iteration in MainMenu.java, RockPaperScissors, DiceRoll.java, and CoinFlip.java to go through all of our posibilities through if/else, while, and switch/case loops. 
-Recusion 5% | Mini games uses recusion to print out all the possibilies for numbers you can roll | We use recursion in DiceRoll.java through the countdown function and going through all of the possibilities of numbers you can roll out in DiceRoll.java
+Recursion 5% | Mini games uses recusion to print out all the possibilies for numbers you can roll | We use recursion in DiceRoll.java through the countdown function and going through all of the possibilities of numbers you can roll out in DiceRoll.java
 
 ### Project Credits
 Contributor | GitHub Link
