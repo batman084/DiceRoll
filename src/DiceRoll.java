@@ -8,6 +8,10 @@ public class DiceRoll {
     //declare main method rollDice within DiceRoll class
     public static void rollDice(int repeatTimes) throws InterruptedException {
 
+        // Call countdown function to print out the possible numbers the suer can roll
+        countdown(6);
+        Thread.sleep(2000);
+
         //Instance of new random class, creation of object rand from Random class
         Random rand = new Random();
 
@@ -67,6 +71,15 @@ public class DiceRoll {
         System.out.println("Here are all of you rolls");
         for (int i : rolls) {
             System.out.println(i);
+        }
+    }
+
+    public static void countdown(int n) {
+        if (n == 0) {
+            System.out.println("Here are the possible numbers you can roll");
+        } else {
+            System.out.println(n);
+            countdown(n - 1);
         }
     }
 
