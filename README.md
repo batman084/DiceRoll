@@ -27,18 +27,20 @@ MainMenu - Main file that is running. It calls the other files.
   * 2D Arrays
   * Array Lists
   * Iteration
+  * Recursion
 
 ## Unit -> Mini Game usage
 Unit | Mini Game Usage | Example
 ---- | --------------- | -------
 Primative Types 15% | Mini Games uses integer, boolean types, and strings | MainMenu.java uses boolean types in while loop and switch cases use integer types
 Using Objects 15% | Mini Games is using multiple Objects and String (non-primitive data type) | We call objects of the different mini-game classes in MainMenu.java
-Boolean Expression and Control statement 40% | Mini Games uses if and switch/case | We use control expressions like "if" and "switch/case" to control how the code runs. We also use boolean expressions to make sure that the code runs until the user says no. 
+Boolean Expression and Control statement 30% | Mini Games uses if and switch/case | We use control expressions like "if" and "switch/case" to control how the code runs. We also use boolean expressions to make sure that the code runs until the user says no. 
 Writing Classes  10% | Mini Games defines RockPaperScissors, DiceRoll, CoinFlip, and MainMenu | We have different classes for each mini-game so that our code is modular and easier to edit
 Arrays 10% | Mini Games uses arrays in multiple places | We use arrays in DiceRoll.java and in RockPaperScissors.java to get a random case.  
-2D Arrays 2.5% | Mini games uses 2D arrays the coin flip animation | We use arrays in CoinFlip.java for holding the strings that contain the ASCII art for the dice.  
-Array Lists 2.5% | Mini games uses array lists to store the number of rolls you do | We use array lists in DiceRoll.java to store the number of dice rolls that you have so that they can all be printed out at the end.
+2D Arrays 5% | Mini games uses 2D arrays the coin flip animation | We use arrays in CoinFlip.java for holding the strings that contain the ASCII art for the dice.  
+Array Lists 5% | Mini games uses array lists to store the number of rolls you do | We use array lists in DiceRoll.java to store the number of dice rolls that you have so that they can all be printed out at the end.
 Iteration 5% | Mini games uses iteration for our main loops and our main files | We use iteration in MainMenu.java, RockPaperScissors, DiceRoll.java, and CoinFlip.java to go through all of our posibilities through if/else, while, and switch/case loops. 
+Recursion 5% | Mini games uses recusion to print out all the possibilies for numbers you can roll | We use recursion in DiceRoll.java through the countdown function and going through all of the possibilities of numbers you can roll out in DiceRoll.java
 
 ### Project Credits
 Contributor | GitHub Link
