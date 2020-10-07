@@ -8,7 +8,7 @@ Welcome to Mini Games! There are 3 different games you can play: Dice Roll, Rock
 Prerequisites: 
 - [Java JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
 
-Download the most recent release. Then open a console or terminal window. CD into the directory and run the following command:   
+Download the most [recent release](https://github.com/batman084/Mini-Games/releases/tag/1.1). Then open a console or terminal window. CD into the directory and run the following command:   
 `java -jar DiceRoll.jar`
 
 
